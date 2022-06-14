@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#arjun 1301204219
 from mininet.net import Mininet
 from mininet.cli import CLI
 from mininet.link import Link, TCLink, Intf
@@ -15,7 +16,7 @@ if '__main__' == __name__:
 	p = Popen("sysctl -w %s=%s" %(key,value), shell=True, stdout=PIPE, stderr=PIPE)
 	stdout, stderr = p.communicate()
 	print("stdout=",stdout,"stderr=",stderr)
-
+	#arjun 1301204219
 	#Add Host
 	h1 = net.addHost('h1')
 	h2 = net.addHost('h2')
@@ -141,7 +142,7 @@ if '__main__' == __name__:
 	r1.cmdPrint("tc qdisc del dev r1-eth0 root")
 	r1.cmdPrint("tc qdisc add dev r1-eth0 root netem delay 60ms")
 	time.sleep(2)
-	
+	#arjun 1301204219
 	# run background traffic
 	#h2.cmd("iperf -s &") 
 	#h1.cmd('iperf -t 20 -c 192.168.6.2 &')
