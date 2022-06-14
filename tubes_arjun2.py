@@ -28,7 +28,7 @@ if '__main__' == __name__:
 	r4 = net.addHost('r4')
 
 	#konfigurasi 1Mbps dan 500Kb
-	#buffer
+	
 	bw1={'bw':1}
 	bw2={'bw':0.5}
 
